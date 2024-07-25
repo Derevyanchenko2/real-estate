@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ui-Kit</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!--==== Google Fonts ===-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--===Main CSS====-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        @@include('sections/header.html')
+        <!-- color components -->
+        <section class="color-setup uikit-section">
+            <div class="container">
+                <h2 class="uiKit-title color-title">01. Color Setup</h2>
+                <div class="uikit-wrapper">
+                    <div class="color-category">
+                        <h3 class="color-category__title">Colors</h3>
+                        <div class="color-item">
+                            <div class="color-top color-category__row">
+                                <div class="color-wrapper">
+                                    <div class="color-box blue"></div>
+                                    <div class="color-text">#3e54eb</div>
+                                </div>
+                                <div class="color-wrapper">
+                                    <div class="color-box white white-uikit"></div>
+                                    <div class="color-text">#fff</div>
+                                </div>
+                                <div class="color-wrapper">
+                                    <div class="color-box black"></div>
+                                    <div class="color-text">#0f1015</div>
+                                </div>
+                                <div class="color-wrapper">
+                                    <div class="color-box gray"></div>
+                                    <div class="color-text">#a4a6ac</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- typography components -->
+        <section class="typography uikit-section">
+            <div class="container">
+                <h2 class="uiKit-title typography-title">02.Typography</h2>
+                <div class="typography-titles">
+                    <h1 class="title-1">Title1 - 60px|fw-700px</h1>
+                    <h2 class="title-2">Title2 - 40px|fw-700px</h2>
+                    <h3 class="title-3">Title3 - 30px|fw-700px</h3>
+                    <h4 class="title-4">Title4 - 24px|fw-700px</h4>
+                    <h5 class="title-5">Title5 - 20px|fw-700px</h5>
+                    <h6 class="title-6">Title6 - 18px|fw-700px</h6>
+                    <br>
+                    <div class="text--lg">Text-lg - 20px|fw-400px</div>
+                    <div class="text">Text - 16px|fw-700px</div>
+                    <div class="text--md">Text-md - 16px|fw-400px</div>
+                    <div class="text--sm">Text-sm - 14px|fw-400px</div>
+                    <div class="caption">Caption - 12px|fw-700px</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- buttons components -->
+        <section class="buttons uikit-section">
+            <div class="container">
+                <h2 class="uiKit-title buttons-title">04.Buttons</h2>
+                <div class="buttons-wrapper uikit-wrapper">
+                    <!-- Arrow Button -->
+                    <div class="btn-examples">
+                        <button class="btn arrow-btn arrow-btn--lg uikit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75L6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25L16.1893 11.25L13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="btn arrow-btn uikit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75L6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25L16.1893 11.25L13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="btn arrow-btn arrow-btn--md uikit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75L6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25L16.1893 11.25L13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="btn arrow-btn arrow-btn--sm uikit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75L6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25L16.1893 11.25L13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!--Default button-->
+                    <div class="btn-examples btn-examples__social-button feedback-buttons">
+                        <button class="social-button social-button__call">
+                            <img src="./images/call-icon.svg" alt="Call" class="button-icon">
+                            Call
+                        </button>
+                        <button class="social-button">
+                            <img src="./images/whatsapp-icon.svg" alt="WhatsApp" class="button-icon">
+                            WhatsApp
+                        </button>
+                    </div>
+
+                    <div class="btn-examples btns-top">
+                        <button class="btn btn--xl">Send Enquiry</button>
+                        <button class="btn btn--lg">Get Started</button>
+                    </div>
+                    <div class="btn-examples btns-bottom">
+                        <button class="btn btn--md">Calculate</button>
+                        <button class="btn btn--sm more-btn bg-transperent">Get Started</button>
+                        <button class="btn btn--xs">Login</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- properties components -->
+        <section class="properties">
+            <div class="container">
+                <h2 class="title-2">Properties components</h2>
+                <div class="properties-wrapper">
+                    <div class="properties-row row">
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/1.png" alt="column image 1">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/2.png" alt="column image 2">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/3.png" alt="column image 3">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/4.png" alt="column image 4">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/5.png" alt="column image 5">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties-column col-4">
+                            <div class="properties-item">
+                                <img class="properties-item__img" src="./images/properties-images/hotel-images/6.png" alt="column image 6">
+                                <h4 class="properties-item__title title-4">
+                                    Luxury Apartment in California
+                                </h4>
+                                <h5 class="properties-item__price">$250000</h5>
+                                <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                                <div class="properties-info">
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                        <span class="properties-info-text text">2</span>
+                                    </div>
+                                    <div class="properties-info-item">
+                                        <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                        <span class="properties-info-text text">1</span>
+                                    </div>
+                                </div>
+                                <div class="properties-profile">
+                                    <div class="properties-profile__info">
+                                        <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                        <span class="properties-profile__info-name text">Alexa Mate</span>
+                                    </div>
+                                    <div class="properties-profile__buttons">
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                        </button>
+                                        <button class="properties-button">
+                                            <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-column--lg">
+                    <div class="properties-item properties-item--lg">
+                        <div class="properties-item__img--lg">
+                            <img src="./images/properties-images/hotel-images/1.png" alt="Hotel 1">
+                        </div>
+                        <div class="properties-item__content--lg">
+                            <h4 class="properties-item__title title-4">Luxury Apartment in California</h4>
+                            <h5 class="properties-item__price">$250000</h5>
+                            <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                            <div class="properties-info">
+                                <div class="properties-info-item">
+                                    <img class="properties-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                    <span class="properties-info-text text">2</span>
+                                </div>
+                                <div class="properties-info-item">
+                                    <img class="properties-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                    <span class="properties-info-text text">2</span>
+                                </div>
+                                <div class="properties-info-item">
+                                    <img class="properties-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                    <span class="properties-info-text text">1</span>
+                                </div>
+                            </div>
+                            <div class="properties-profile">
+                                <div class="properties-profile__info">
+                                    <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                    <span class="properties-profile__info-name text">Alexa Mate</span>
+                                </div>
+                                <div class="properties-profile__buttons">
+                                    <button class="properties-button">
+                                        <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                    </button>
+                                    <button class="properties-button">
+                                        <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                    </button>
+                                    <button class="properties-button">
+                                        <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <!-- form components -->
+        <section class="uikit-form">
+            <div class="container">
+                <h2 class="title-2 uikit-form__title">Form Components</h2>
+                @@include('sections/agent-form.html')
+            </div>
+        </section>
+
+        
+        <!-- ===Scripting In=== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+

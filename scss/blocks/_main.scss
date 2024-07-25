@@ -1,0 +1,113 @@
+  .main {
+    position: relative;
+  }
+  .main-top {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-content{
+    max-width: 457px;
+    width: 100%;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .search-form {
+    max-width: 945px;
+    width: 100%;
+    margin: 0 auto;
+    background: $blue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown {
+    position: relative;
+    max-width: 290px;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .dropdown-title{
+    margin-bottom: 7px;
+  }
+  
+  .dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .dropdown-icon{
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-info {
+    flex: 1;
+  }
+  .selected-value {
+    color: $white;
+    opacity: 0.5;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $white;
+    box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .dropdown.open .dropdown-content {
+    max-height: 200px;
+  }
+  
+  .dropdown-content__button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-content__button:hover {
+    background: #f0f0f0;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px; 
+    border-radius: 10px;
+    background: $white;  
+  }
+  

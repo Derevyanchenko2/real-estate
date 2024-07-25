@@ -1,0 +1,41 @@
+.featured {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+}
+.featured-decor__left{
+    position: absolute;
+    top: 52px;
+    left: 62px;
+}
+
+.featured-heading {
+    text-align: center;
+}
+
+.featured-text {
+    color: $gray;
+}
+.featured-image-container {
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-content {
+    position: absolute;
+    bottom: -97px; 
+    right: 100px;   
+    max-width: 516px;
+    background: $blue;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+}
+.featured-item__price {
+    display: block;
+}

@@ -1,0 +1,33 @@
+// libs
+
+// base
+@import './base/reset.scss';
+@import './base/base.scss';
+@import './base/variables.scss';
+@import './base/typography.scss';
+@import './base/body-text.scss';
+@import './base/colors.scss';
+@import './base/utils.scss';
+
+@import 'base.scss';
+
+//blocks
+@import './blocks/_header.scss';
+@import './blocks/_main.scss';
+@import './blocks/_benefits.scss';
+@import './blocks/_properties.scss';
+@import './blocks/_featured.scss';
+@import './blocks/_testimonials.scss';
+@import './blocks/_agents.scss';
+// @import './blocks/_agent-form.scss';
+@import './blocks/_footer.scss';
+
+//components
+@import './components/buttons.scss';
+@import './components/input.scss';
+
+@import './ui-kit';
+
+
+// thanks-page
+// @import '_thanks-page.scss';

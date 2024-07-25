@@ -1,0 +1,64 @@
+.form-item {
+    max-width: 457px;
+    padding: 20px;
+    box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
+    background: #fff;
+    border-radius: 16px;
+}
+.form-title {
+    margin-bottom: 30px;
+}
+
+.form-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+}
+.form-person__img {
+    margin-right: 16px;
+    img{
+        border-radius: 10px;
+    }
+}
+
+.form-info__title {
+    margin-bottom: 10px;
+}
+
+.form-info__job {
+    color: $gray;
+}
+
+.agent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.agent-form__group {
+    display: flex;
+    flex-direction: column;
+}
+.agent-form__label{
+    margin-bottom: 5px;
+}
+.agent-form__input, .agent-form__textarea{
+    padding: 16px;
+    border: 1px solid rgba(164, 166, 172, 0.2);
+    border-radius: 10px;
+}
+
+.agent-form__textarea {
+    padding: 10px 20px;
+    max-height: 104px;
+}
+
+.social-button {
+    justify-content: center;
+}
+
+.social-button__text {
+    color: $blue;
+    display: block;
+}

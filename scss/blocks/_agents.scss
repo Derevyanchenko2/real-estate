@@ -1,0 +1,45 @@
+.agents {
+    padding: 70px 0;
+    // background: rgba(164, 166, 172, 0.05);
+}
+.agents-heading {
+    margin-bottom: 50px;
+}
+
+.agents-title {
+    margin-bottom: 10px;
+}
+.agents-text {
+    color: $gray;
+}
+.agents-row {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.agent-column {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.agent-item__image {
+    margin-bottom: 20px;
+    img{
+        border-radius: 10px;
+    }
+}
+.agent-item__image--center{
+    margin-bottom: 0;
+}
+.agent-item__info--center{
+    margin-bottom: 20px;
+}
+
+.agent-info__name {
+    margin-bottom: 10px;
+}
+.agent-info__job {
+    margin-bottom: 20px;
+    color: $gray;
+    display: block;
+}
+

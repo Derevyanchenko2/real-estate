@@ -1,0 +1,33 @@
+.testimonials {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background:rgba(164, 166, 172, 0.05);
+}
+.testimonials-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.testimonials-column {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+.testimonials-item {
+    padding: 20px;
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.02), 0 10px 40px -4px rgba(16, 24, 40, 0.02);
+    background: $white;
+    border-radius: 10px;
+}
+.stars {
+    display: flex;
+    align-items: center;
+    gap:2.5px;
+}
+
+.testimonials-person {
+    display: flex;
+}
+.testimonials-person__icon {
+    margin-right: 10px;
+}
+

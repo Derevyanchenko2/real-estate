@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*
+400
+500
+600
+700
+800
+
+*/ 
+
+// styles
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	box-sizing: border-box;
+}
+li {
+	list-style-type: none;
+}
+
+dl, ol, ul {
+  margin-bottom: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	display: block;
+	background: transparent;
+	cursor: pointer;
+	font-family: 'Gilroy', sans-serif;
+}
+
+input {
+	&:focus {
+		outline: none;
+	}
+}
+
+body, html {
+	// overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+
+.fw-500 {
+	font-weight: 600;
+  }
+
+.fw-600 {
+  font-weight: 600;
+}
+
+
+.fw-700 {
+	font-weight: 700;
+  }
+  
+
+.fw-800 {
+  font-weight: 800;
+}
+
+
+
+// .section-title {
+
+// }
+// .section-text{
+// // style section-text
+// }
+
+// .btn {
+// // style-btn
+// }
+
+
+// ==========================================================================================================================================================
+// responsive
+

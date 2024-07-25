@@ -1,0 +1,114 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background: #3e54eb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    // padding: 13px 30px;
+    &--xl {
+      padding: 16px 162px;
+      font-size: 16px;
+    }
+  
+    &--lg {
+      padding: 16px 92px;
+      font-size: 16px;
+    }
+  
+    &--md {
+      padding: 16px 74px;
+      font-size: 14px;
+    }
+  
+    &--sm {
+      padding: 16px 52px;
+      font-size: 12px;
+    }
+  
+    &--xs {
+      padding: 13px 30px;
+    }
+  
+}
+
+.feedback-buttons{
+  display: flex;
+  align-items: center;
+}
+.social-button__call{
+  margin-right: 11px;
+}
+
+
+.more-btn{
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.bg-transparent{
+  background:transparent;
+}
+
+// arrow icon size
+.arrow-icon{
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+  &--md{
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &--sm{
+    svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+//arrow-btn
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+}
+.arrow-btn--lg{
+  padding: 16px;
+}
+.arrow-btn--md{
+  padding: 10px;
+
+}
+.arrow-btn--sm{
+  padding: 8px;
+ 
+}
+// social buttons
+.social-button{
+  border: 1px solid #3e54eb;
+  border-radius: 10px;
+  padding: 16px 71px;
+  // background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+// btn right, btn left
+.button--arrow-right,.button--arrow-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

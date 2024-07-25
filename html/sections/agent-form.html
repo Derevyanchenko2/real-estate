@@ -1,0 +1,54 @@
+<div class="form-wrapper">
+    <div class="form-item">
+        <h6 class="form-title title-6">Agent Details</h6>
+        <div class="form-person">
+            <div class="form-person__img">
+                <img src="./images/form-agents-image/1.png" alt="Agent 1">
+            </div>
+            <div class="form-person__info">
+                <h4 class="form-info__title title-4">Leasie Willions</h4>
+                <p class="form-info__job text--md">Real Estate Agent</p>
+            </div>
+        </div>
+        <form action="#" class="agent-form">
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="name">
+                    Name
+                </label>
+                <input class="agent-form__input" id="name" placeholder="Enter Your Name" type="text" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="email">
+                    Email
+                </label>
+                <input class="agent-form__input" id="email" placeholder="Enter Your Email" type="email" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="phone">
+                    Phone Number
+                </label>
+                <input class="agent-form__input" id="phone" placeholder="Enter Your Phone Number" type="tel" pattern="[0-9]{10}" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="message">
+                    Message
+                </label>
+                <textarea class="agent-form__textarea" id="message" placeholder="Enter Your Message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="agent-form__group">
+                <button class="btn btn--xl" type="submit">Send Enquiry</button>
+            </div>
+            <div class="feedback-buttons">
+                <button class="social-button social-button__call">
+                    <img src="./images/call-icon.svg" alt="Call icon">
+                    <span class="social-button__text">Call</span>
+                </button>
+                <button class="social-button">
+                    <img src="./images/whatsapp-icon.svg" alt="Whatsapp icon">
+                    <span class="social-button__text">Whatsapp</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
