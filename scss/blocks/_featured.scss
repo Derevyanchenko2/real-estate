@@ -2,11 +2,19 @@
     padding-top: 100px;
     padding-bottom: 200px;
     position: relative;
+    @media(max-width:460px){
+        padding-bottom: 281px;
+    }
 }
 .featured-decor__left{
     position: absolute;
     top: 52px;
     left: 62px;
+    @media(max-width:768px){
+        max-width: 90px;
+        top: 20px;
+        left: 10px;
+    }
 }
 
 .featured-heading {
@@ -35,6 +43,18 @@
     border-radius: 10px;
     padding: 20px;
     backdrop-filter: blur(20px);
+    @media(max-width:992px){
+        bottom: -135px;
+        right: 0px;
+    }
+    @media(max-width:768px){
+        bottom: -216px;
+        right: 0;
+    }
+    @media(max-width:460px){
+        bottom: -278px;
+        right: 0;
+    }
 }
 .featured-item__price {
     display: block;

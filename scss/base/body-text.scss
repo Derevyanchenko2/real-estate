@@ -9,6 +9,12 @@
     font-weight: 400;
     font-size: 16px;
     color: #0f1015;
+    @media(max-width:1200px){
+        font-size: 15px;
+    }
+    @media(max-width:768px){
+        font-size: 12px;
+    }
 }
 .text--sm{
     font-family: "Jost", sans-serif;
@@ -21,6 +27,12 @@
     font-weight: 400;
     font-size: 20px;
     color: #0f1015;
+    @media(max-width: 992px){
+        font-size: 18px;
+    }
+    @media(max-width: 768px){
+        font-size: 16px;
+    }
 }
 
 .caption{

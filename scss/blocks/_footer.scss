@@ -5,9 +5,11 @@
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
+    @media(max-width:992px){
+         flex-wrap: wrap;
+    }
 }
-.footer-logo {
-}
+
 .logo-white{
     margin-bottom: 20px;
     display: block;
@@ -15,6 +17,14 @@
 
 .footer-menu__col {
     display: flex;
+    @media(max-width:768px){
+        margin-bottom: 40px;
+    }
+}
+.footer-logo{
+    @media(max-width:768px){
+        margin-bottom: 40px;
+    }
 }
 .footer-menu {
 }
@@ -29,6 +39,12 @@
     color: #fff;
 }
 .text--md {
+    @media(max-width: 992px){
+        font-size: 14px;
+    }
+    @media(max-width: 768px){
+        font-size: 12px;
+    }
 }
 .footer-info {
 }
@@ -53,6 +69,10 @@
     height: 48px;
     border-radius: 40px;
     background: #fff;
+    @media(max-width:768px){
+        width: 40px;
+        height: 40px;
+    }
 }
 .footer-bottom {
 }

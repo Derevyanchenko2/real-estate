@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.logo{
+    max-width: 120px;
+    width: 100%;
+}
 .header-menu {
     display: flex;
     align-items: center;
@@ -20,6 +24,22 @@
         color: #3e54eb;
     }
 }
+.header-link{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.header-btn--pc{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.header-btn--mobile{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+    }
+}
 // burger
 .burger {
 	display: none;
@@ -32,7 +52,7 @@
 	height: 100vh;
     z-index: 1001 ;
     overflow-y: auto;
-    background: rgba(164, 166, 172, 0.05);
+    background-color: $gray;
 	transition: all 0.3s;
 	position: relative;
 
@@ -88,7 +108,7 @@
 		width: 100%;
 		height: 100%;
         align-items: center;
-
+        gap: 25px;
 		.menu-item {
 			margin: 0;
             margin-bottom: 25px;
@@ -127,7 +147,7 @@
     .open-menu-js {
 		cursor: pointer;
         margin-left: 50px;
-        margin-bottom: -11px;
+        margin-bottom: 0px;
 	}
 
 	.open-menu span
