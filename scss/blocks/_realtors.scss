@@ -1,0 +1,21 @@
+.realtors {
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+.realtors-column {
+    margin-bottom: 30px;
+}
+
+.realtors-column__images {
+    margin-bottom: 20px;
+    img{
+        border-radius: 10px;
+    }
+}
+.realtors-info__job {
+    color: $gray;
+    margin-bottom: 25px;
+}
+.realtors-info__text {
+    color: $black;
+}

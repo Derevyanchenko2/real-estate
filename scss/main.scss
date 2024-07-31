@@ -22,11 +22,25 @@
 // @import './blocks/_agent-form.scss';
 @import './blocks/_footer.scss';
 
+
+// section about
+@import './blocks/_about.scss';
+@import './blocks/_mission.scss';
+@import './blocks/_video.scss';
+@import './blocks/_projects.scss';
+
+// section agents
+@import './blocks/_agents-main.scss';
+@import './blocks/_realtors.scss';
+
+
 //components
 @import './components/buttons.scss';
 @import './components/input.scss';
 
 @import './ui-kit';
+
+
 
 
 // thanks-page

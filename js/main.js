@@ -52,3 +52,35 @@ document.addEventListener('click', function(event) {
       closeAllDropdowns();
   }
 });
+
+// video open
+function playVideo(event) {
+    event.preventDefault();
+    var videoContainer = document.getElementById('video-container');
+    var thumbnail = document.getElementById('thumbnail');
+    var playButton = document.querySelector('.play-button');
+    var iframe = document.getElementById('video');
+
+    // Установите URL видео (замените 'YOUR_VIDEO_URL' на реальный URL видео)
+    var videoURL = "https://youtu.be/Dmhws_sBEic?si=maDxQH6TMh7mGa9-";
+    iframe.src = videoURL;
+
+    // Скрыть изображение и кнопку play
+    thumbnail.classList.add('hidden');
+    playButton.classList.add('hidden');
+
+    // Показать контейнер с видео
+    videoContainer.classList.remove('hidden');
+    videoContainer.classList.add('visible');
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper-container', {
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+  });
+});
