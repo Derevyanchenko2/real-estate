@@ -16,6 +16,12 @@
     &--xl {
       padding: 16px 162px;
       font-size: 16px;
+      @media(max-width: 1200px){
+        padding: 16px 133px;
+      }
+      @media(max-width: 768px){
+        padding: 13px 55px;
+      }
     }
   
     &--lg {
@@ -42,9 +48,19 @@
 .feedback-buttons{
   display: flex;
   align-items: center;
+  @media(max-width: 460px){
+    flex-direction: column;
+    gap: 15px;
+    button{
+      width: 100%;
+    }
+  }
 }
 .social-button__call{
   margin-right: 11px;
+  @media(max-width: 460px){
+    margin-right: 0;
+  }
 }
 
 

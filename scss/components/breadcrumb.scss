@@ -1,0 +1,18 @@
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    span{
+        color: $black;
+        padding: 0 8px;
+    }
+}
+.breadcrumb-center{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-link{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0f1015;
+}

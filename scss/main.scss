@@ -19,7 +19,7 @@
 @import './blocks/_featured.scss';
 @import './blocks/_testimonials.scss';
 @import './blocks/_agents.scss';
-// @import './blocks/_agent-form.scss';
+@import './blocks/_agent-form.scss';
 @import './blocks/_footer.scss';
 
 
@@ -33,12 +33,28 @@
 @import './blocks/_agents-main.scss';
 @import './blocks/_realtors.scss';
 
+// section contact main
+@import './blocks/_contact-main.scss';
+@import './blocks/_contact.scss';
+
+//section properties 
+@import './blocks/_catalog.scss';
+
+
+// single hotel page
+@import './blocks/_single-hotel.scss';
+
+// policy page
+@import './blocks/_policy.scss';
 
 //components
 @import './components/buttons.scss';
+@import './components/breadcrumb.scss';
 @import './components/input.scss';
 
 @import './ui-kit';
+
+
 
 
 

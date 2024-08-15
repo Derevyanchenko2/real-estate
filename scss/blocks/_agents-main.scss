@@ -1,10 +1,5 @@
 .agents-banner {
-    background-image: url('../images/agents-bg-image.jpg'); /* Ensure this path is correct */
-    background-size: cover;
-    background-position: center;
-    padding-top: 227px;
-    padding-bottom: 233px;
-    text-align: center;
+    background-image: url('../images/agents-bg-image.jpg'); 
 }
 
 .agents-title {
@@ -12,13 +7,13 @@
     margin-bottom: 10px;
 }
 
-.breadcrumb {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
+// .breadcrumb {
+//     padding: 0;
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     color: white;
+// }
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
@@ -34,7 +29,3 @@
 .breadcrumb-item a:hover {
     text-decoration: underline;
 }
-
-// .breadcrumb-item.active {
-//     color: gray;
-// }

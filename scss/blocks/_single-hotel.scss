@@ -1,0 +1,549 @@
+.hotel-main__image img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hotel-row {
+    display: flex;
+    margin-top: -62px;
+    gap: 20px;
+
+}
+
+.hotel-image {
+    position: relative;
+    display: inline-block;
+}
+ 
+.hotel-row{
+  @media(max-width: 1200px){
+    justify-content: center;
+  }
+
+}
+
+.hotel-image--more {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hotel-title--more {
+    position: absolute;
+    z-index: 1;
+    color: $white; 
+}
+
+
+.hotel-container {
+  padding: 20px;
+}
+
+.hotel-row {
+  gap: 20px;
+  margin-top: -62px;
+  justify-content: center;
+  @media(max-width: 768px){
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin-top: -50px;
+  }
+}
+
+.hotel-image--sm {
+  position: relative;
+  display: inline-block;
+  max-width: 212px;
+  width: 100%;
+  @media(max-width: 992px){
+    max-width: 180px;
+  }
+  @media(max-width: 768px){
+    max-width: 110px;
+  }
+  @media(max-width: 440px){
+      max-width: 95px;
+  }
+}
+
+.hotel-image--sm img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.hotel-image--more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hotel-image--more img {
+  filter: brightness(0.7);
+}
+
+.hotel-title--more {
+  position: absolute;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: bold;
+  @media(max-width: 992px){
+    font-size: 18px;
+  }
+  @media(max-width: 440px){
+    font-size: 13px;
+  }
+}
+
+// @media(max-width: 1200px) {
+//   .hotel-row {
+//       justify-content: center;
+//   }
+//   .hotel-image--sm {
+//       max-width: calc(25% - 15px);
+//   }
+// }
+
+// @media(max-width: 992px) {
+//   .hotel-image--sm {
+//       max-width: calc(33.33% - 13.33px);
+//   }
+// }
+
+// @media(max-width: 768px) {
+//   .hotel-image--sm {
+//       max-width: calc(50% - 10px);
+//   }
+// }
+
+// @media(max-width: 576px) {
+//   .hotel-image--sm {
+//       max-width: calc(100% - 10px);
+//   }
+// }
+
+//hotelInfo section
+.hotelInfo{
+  margin-bottom: 100px;
+}
+.hotelInfo-heading {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(164, 166, 172, 0.2);
+}
+.hotelInfo-row{
+  margin-top: 50px;
+  display: flex;
+  @media(max-width: 1200px){
+    flex-wrap: wrap;
+  }
+}
+.hotelInfo-form{
+  margin-top: 40px;
+}
+.hotelInfo-title {
+    margin-bottom: 12px;
+}
+
+.hotelInfo-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotelInfo-price {
+    font-family: "Jost", sans-serif;
+    margin: 20px 0;
+}
+
+
+
+//tab
+.hotelInfo-tab {
+  max-width: 653px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.tab-links {
+  overflow: hidden;
+  display: flex;
+  gap: 30px;
+}
+
+.tab-links button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0f1015;
+  background: transparent;
+  padding-bottom: 5px;
+  @media(max-width: 768px){
+    font-size: 14px;
+  }
+}
+
+.tab-links button.active {
+  color: $blue;
+  position: relative;
+}
+
+.tab-links button.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $blue;
+  border-radius: 2px;
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 20px;
+  animation: fadeEffect 1s;
+}
+
+.tabcontent-text,
+.tabcontent-details,
+.tabcontent-plan {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(164, 166, 172, 0.2);
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar for tab-links */
+@media (max-width: 460px) {
+  .tab-links {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .tab-links::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .tab-links::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  .tab-links::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .tab-links button {
+    flex: 0 0 auto;
+  }
+}
+
+
+//details
+  .details-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+  }
+  
+  .floor-plan, .location {
+    margin-top: 20px;
+  }
+  
+  .floor-plan img, .location img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+
+.tabcontent-plan__wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    @media(max-width: 460px){
+      flex-wrap: wrap;
+    }
+}
+
+
+.details-content {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 768px){
+      flex-wrap: wrap;
+    }
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+    @media(max-width: 768px){
+      width: 100%;
+    }
+}
+.left-column{
+  @media(max-width: 768px){
+    margin-bottom: 20px;
+  }
+}
+
+
+.left-column p,
+.right-column p {
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.location {
+    margin: 20px;
+}
+.tabcontent-location{
+    margin-top: 20px;
+}
+.tabcontent-location__title{
+    margin-bottom: 20px;
+}
+.tabcontent-location {
+  margin-top: 20px;
+}
+
+.tabcontent-location__title {
+  margin-bottom: 20px;
+}
+
+
+// map
+.map-container {
+  width: 653px;
+  min-height: 277px;
+  border: 1px solid #ccc;
+  @media(max-width: 768px){
+    width: 100%;
+    min-height: 160px;
+  }
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+// amenity
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.amenity-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
+  background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.amenity-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.amenity-item:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hotelInfo-heading__buttons--pc{
+  @media(max-width: 460px){
+    display: none;
+  }
+}
+.hotelInfo-heading__buttons--mobile{
+  display: none;
+  @media(max-width: 460px){
+    display: block;
+  }
+}
+// tab calculator
+.calculator {
+  text-align: center;
+}
+
+.monthly-payment {
+  margin-bottom: 20px;
+}
+.monthly-payment__price{
+  text-align-last: left;
+  display: flex;
+  align-items: center;
+}
+// .monthly-payment span {
+//   font-weight: 400;
+//   font-size: 16px;
+// }
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 80%;
+  background-color: $blue;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+}
+
+.legend .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend .principle {
+  background-color: $blue;
+}
+
+.legend .insurance {
+  background-color: #A7C3F4;
+}
+
+.form {
+  text-align: left;
+}
+
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  // flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.input-group:last-child {
+  margin-right: 0;
+}
+
+.input-group{
+  max-width: 321px;
+  width: 100%;
+}
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  max-width: 321px;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #3e54eb;
+  border-radius: 10px;
+}
+
+.calculate-button {
+  margin-top: 20px;
+}
+
+.calculate-button:hover {
+  background-color: $blue;
+}
+
+
+// schedule
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group__wrapper .form-group {
+  flex: 1; 
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}

@@ -4,6 +4,16 @@
 }
 .realtors-column {
     margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media(max-width: 992px){
+        flex: 0 50%;
+        max-width: 50%;
+    }
+    @media(max-width: 768px){
+        flex: 0 100%;
+        max-width: 100%;
+    }
 }
 
 .realtors-column__images {
@@ -15,6 +25,10 @@
 .realtors-info__job {
     color: $gray;
     margin-bottom: 25px;
+    @media(max-width: 992px){
+        color: #a4a6ac;
+        margin-bottom: 10px;
+    }
 }
 .realtors-info__text {
     color: $black;

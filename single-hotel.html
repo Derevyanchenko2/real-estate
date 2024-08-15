@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <div class="mobileMenu-overlay">
+    <div class="mobileMenu">
+        <button class="mobileMenu-close">&times;</button>
+        <div class="mobileMenu-container">
+            <ul class="header-menu">
+                <li class="mobileMenu-item">
+                    <a class="mobileMenu-link" href="./index.html">Home</a>
+                </li>
+                <li class="mobileMenu-item">
+                    <a class="mobileMenu-link" href="./about-page.html">About Us</a>
+                </li>
+                <li class="mobileMenu-item">
+                    <a class="mobileMenu-link" href="#">Properties</a>
+                </li>
+                <li class="mobileMenu-item">
+                    <a class="mobileMenu-link" href="./agents-page.html">Agents</a>
+                </li>
+                <li class="mobileMenu-item">
+                    <a class="mobileMenu-link" href="#">Blog</a>
+                </li>
+                <div class="header-link">
+                    <a class="btn btn--xs header-btn--mobile" href="#">Contact Us</a>
+                </div>
+            </ul>
+        </div>
+    </div>
+  </div>
+<header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <a href="#" class="logo">
+               <img src="./images/logo.svg" alt="logo">
+            </a>
+            <ul class="header-menu menu">
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="./ui-kit.html">Ui-Kit</a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="./index.html" class=>Home</a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="./about-page.html" class=>About Us</a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="./property-page.html" class=>Properties</a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="./agents-page.html" class=>Agents</a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link text--md" href="#" class=>Blog</a>
+                </li>
+            </ul>
+            <div class="header-link">
+                <a class="btn btn--xs header-btn--pc" href="./contact-page.html">Contact Us</a>
+            </div>
+            <div class="burger open-menu-js">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- Hotel Main -->
+        <main class="hotel-main">
+            <div class="container">
+                <nav class="property-breadcrumb breadcrumb">
+                    <a class="breadcrumb-link" href="./index.html">Home</a>
+                    <span>›</span>
+                    <a class="breadcrumb-link" href="./property-page.html">Properties</a>
+                    <span>›</span>
+                    <a class="breadcrumb-link" href="#">Elegant Villa sale in Miami</a>
+                </nav>
+            </div>
+            <div class="hotel-main__image">
+                <img src="./images/hotel-main-image.jpg" alt="hotel main image">
+            </div>
+            <div class="hotel-container">
+                <div class="hotel-row">
+                    <a href="#" class="hotel-image--sm">
+                        <img src="./images/hotel-images/1.png" alt="hotel image">
+                    </a>
+                    <a href="#" class="hotel-image--sm">
+                        <img src="./images/hotel-images/2.png" alt="hotel image">
+                    </a>
+                    <a href="#" class="hotel-image--sm">
+                        <img src="./images/hotel-images/3.png" alt="hotel image">
+                    </a>
+                    <a href="#" class="hotel-image--sm">
+                        <img src="./images/hotel-images/4.png" alt="hotel image">
+                    </a>
+                    <a href="#" class="hotel-image--sm hotel-image--more">
+                        <img src="./images/hotel-images/5.png" alt="Hotel Image more">
+                        <h4 class="title--4 hotel-title--more">+6 More</h4>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- // Hotel Main -->
+
+        <!-- Hotel Info -->
+        <section class="hotelInfo">
+            <div class="container">
+                <div class="hotelInfo-heading">
+                    <div class="hotelInfo-heading__left">
+                        <h3 class="hotelInfo-title title--3">Beton Elegant Villa</h3>
+                        <div class="hotelInfo-location">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="11" r="3" stroke="#0F1015" stroke-width="1.5" />
+                                <path d="M21 10.8889C21 15.7981 15.375 22 12 22C8.625 22 3 15.7981 3 10.8889C3 5.97969 7.02944 2 12 2C16.9706 2 21 5.97969 21 10.8889Z" stroke="#0F1015" stroke-width="1.5" />
+                              </svg>
+                              <p class="text--md">
+                                3891 Ranchview Dr. Richardson, California 62639
+                              </p>
+                        </div>
+                        <h4 class="hotelInfo-price title--4">
+                            $7500000
+                        </h4>
+                        <div class="hotelInfo-heading__buttons--mobile">
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotelInfo-heading__buttons--pc">
+                        <div class="properties-profile__buttons">
+                            <button class="properties-button">
+                                <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                            </button>
+                            <button class="properties-button">
+                                <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                            </button>
+                            <button class="properties-button">
+                                <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotelInfo-wrapper">
+                    <div class="hotelInfo-row">
+                        <div class="hotelInfo-tab">
+                            <div class="tab-links">
+                                <button class="tablinks title--5 active" onclick="openTab(event, 'Descriptions')">Descriptions</button>
+                                <button class="tablinks title--5" onclick="openTab(event, 'Features')">Features</button>
+                                <button class="tablinks title--5" onclick="openTab(event, 'Mortgage Calculator')">Mortgage Calculator</button>
+                                <button class="tablinks title--5" onclick="openTab(event, 'Schedule a Tour')">Schedule a Tour</button>
+                            </div>
+
+                            <div id="Descriptions" class="tabcontent" style="display: block;">
+                                <div class="tabcontent-text">
+                                    <p class="text--md">
+                                        t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                                        <br>
+                                        <br>
+                                        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                        <br>
+                                        <br>
+                                        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 
+                                      </p>
+                                </div>
+                                <div class="tabcontent-details">
+                                    <h6 class="title--6 tabcontent-details__title">Details</h6>
+                                    <div class="details-content">
+                                        <div class="left-column">
+                                            <p class="text--md"><strong class="text">Built Up Area (sqft):</strong> 3240 sqft</p>
+                                            <p class="text--md"><strong class="text">Dimensions:</strong> 40x50</p>
+                                            <p class="text--md"><strong class="text">Carpet Area (sqft):</strong> 2560 sqft</p>
+                                            <p class="text--md"><strong class="text">Built Year:</strong> 2017</p>
+                                            <p class="text--md"><strong class="text">Parking:</strong> 2</p>
+                                        </div>
+                                        <div class="right-column">
+                                            <p class="text--md"><strong class="text">Bedrooms:</strong> 5</p>
+                                            <p class="text--md"><strong class="text">Bathrooms:</strong> 7</p>
+                                            <p class="text--md"><strong class="text">Balcony:</strong> 2</p>
+                                            <p class="text--md"><strong class="text">Status:</strong> Ready to Move</p>
+                                            <p class="text--md"><strong class="text">Property Category:</strong> Villa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent-plan">
+                                    <h6 class="tabcontent-plan__title title-6">Floor Plan</h6>
+                                    <div class="tabcontent-plan__wrapper">
+                                        <img class="tabcontent-plan__img" src="./images/floor-plan-1.png" alt="floor plan">
+                                        <img class="tabcontent-plan__img" src="./images/floor-plan-2.png" alt="floor plan">
+                                    </div>  
+                                </div>
+                                <div class="tabcontent-location">
+                                    <h6 class="tabcontent-location__title title--6">Location</h6>
+                                    <div class="map-container">
+                                        <iframe 
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.893033639473!2d-73.94859578459364!3d40.6749575793349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b19cf8f5679%3A0x1b9f59c1b2f9e9d7!2sBrower%20Park%2C%20Brooklyn%2C%20NY%2011216%2C%20USA!5e0!3m2!1sen!2s!4v1593608344555!5m2!1sen!2s" 
+                                            allowfullscreen="" 
+                                            loading="lazy">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Features" class="tabcontent">
+                                 <div class="tabcontent-text">
+                                    <p class="text--md">
+                                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                                        <br>
+                                        <br>
+                                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 
+                                      </p>
+                                </div>
+                                <div class="tabcontent-amenity">
+                                    <div class="amenities-grid">
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/1.svg" alt="Swimming Pool">
+                                            <p class="text--md">Swimming Pool</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/2.svg" alt="24 Hours Security">
+                                            <p class="text--md">24 Hours Security</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/3.svg" alt="Parking">
+                                            <p class="text--md">Parking</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/4.svg" alt="Private Lift">
+                                            <p class="text--md">Private Lift</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/5.svg" alt="Indoor Games">
+                                            <p class="text--md">Indoor Games</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/6.svg" alt="Wifi">
+                                            <p class="text--md">Wifi</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/7.svg" alt="Sit Out">
+                                            <p class="text--md">Sit Out</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/8.svg" alt="Gym">
+                                            <p class="text--md">Gym</p>
+                                        </div>
+                                        <div class="amenity-item">
+                                            <img src="./images/tab-images/9.svg" alt="24 Hours Water">
+                                            <p class="text--md">24 Hours Water</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="Mortgage Calculator" class="tabcontent">
+                                <div class="tabcontent-calculator">
+                                <div class="calculator">
+                                    <div class="monthly-payment">
+                                        <div class="monthly-payment__price">
+                                            <h5 class="title--5" id="monthly-payment">$8000</h5>
+                                            <span class="text--md">/Month</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" id="progress"></div>
+                                        </div>
+                                        <div class="legend">
+                                            <div>
+                                                <span class="dot principle"></span> Principle & Interest
+                                            </div>
+                                            <div>
+                                                <span class="dot insurance"></span> Home Insurance
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form class="form" id="calculator-form">
+                                        <div class="form-wrapper">
+                                            <div class="input-group">
+                                                <label class="label" for="loan-amount">Loan Amount</label>
+                                                <input type="text" id="loan-amount" value="$5000000">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="label" for="down-payment">Down Payment</label>
+                                                <input type="text" id="down-payment" value="$2500000">
+                                            </div>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <div class="input-group">
+                                                <label class="label" for="interest-rate">Interest Rate</label>
+                                                <input type="text" id="interest-rate" value="8.5">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="label" for="loan-terms">Loan Terms (Years)</label>
+                                                <input type="text" id="loan-terms" value="20">
+                                            </div>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <div class="input-group">
+                                                <label class="label" for="home-insurance">Home Insurance</label>
+                                                <input type="text" id="home-insurance" value="$20000">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="label" for="property-tax">Property Tax</label>
+                                                <input type="text" id="property-tax" value="$2000">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="calculate-button btn btn--md">Calculate</button>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                          
+                            <div id="Schedule a Tour" class="tabcontent">
+                                <div class="tabcontent-schedule">
+                                    <form>
+                                        <div class="form-group__wrapper">
+                                            <div class="form-group">
+                                                <label class="label" for="date">Date</label>
+                                                <input type="date" id="date" name="date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="label" for="time">Time</label>
+                                                <input type="time" id="time" name="time">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label" for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label" for="email">Email Address</label>
+                                            <input type="email" id="email" name="email" placeholder="Enter Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label" for="phone">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label" for="message">Message</label>
+                                            <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn--sm ">Submit Request</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotelInfo-form">
+                            <div class="form-wrapper">
+    <div class="form-item agent-form__item">
+        <h6 class="form-title title-6">Agent Details</h6>
+        <div class="form-person">
+            <div class="form-person__img">
+                <img src="./images/form-agents-image/1.png" alt="Agent 1">
+            </div>
+            <div class="form-person__info">
+                <h4 class="form-info__title title-4">Leasie Willions</h4>
+                <p class="form-info__job text--md">Real Estate Agent</p>
+            </div>
+        </div>
+        <form action="#" class="agent-form">
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="name">
+                    Name
+                </label>
+                <input class="agent-form__input" id="name" placeholder="Enter Your Name" type="text" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="email">
+                    Email
+                </label>
+                <input class="agent-form__input" id="email" placeholder="Enter Your Email" type="email" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="phone">
+                    Phone Number
+                </label>
+                <input class="agent-form__input" id="phone" placeholder="Enter Your Phone Number" type="tel" pattern="[0-9]{10}" required>
+            </div>
+            <div class="agent-form__group">
+                <label class="agent-form__label label" for="message">
+                    Message
+                </label>
+                <textarea class="agent-form__textarea" id="message" placeholder="Enter Your Message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="agent-form__group">
+                <button class="btn btn--xl" type="submit">Send Enquiry</button>
+            </div>
+            <div class="feedback-buttons">
+                <button class="social-button social-button__call">
+                    <img src="./images/call-icon.svg" alt="Call icon">
+                    <span class="social-button__text">Call</span>
+                </button>
+                <button class="social-button">
+                    <img src="./images/whatsapp-icon.svg" alt="Whatsapp icon">
+                    <span class="social-button__text">Whatsapp</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Hotel Info -->
+    
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <a class="logo logo-white" href="#">
+                    <img src="./images/logo-white.svg" alt="Footer Logo White">
+                </a>
+                <p class="footer-logo__text text--md footer-text">
+                    Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Imperdiet tempus <br>
+                    felis vitae sit est quisque.
+                </p>
+            </div>
+            <div class="footer-menu__col">
+                <div class="footer-menu footer-menu--first">
+                    <h6 class="footer-menu__title color-white">About</h6>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">About us</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">Blog</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">Agents</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">New Property</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h6 class="footer-menu__title color-white">Service</h6>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">Payment & Tax</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">Features</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">View Booking</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link text--md" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h6 class="footer-info__title title-6 footer-menu__title color-white">Our Location</h6>
+                <p class="footer-info__address footer-text text--md">
+                    2972 Westheimer Rd. Santa Ana, Illinois 85486 
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-solial facebook">
+                        <img src="./images/footer-icons/facebook.svg" alt="facebook-icon">
+                    </a>
+                    <a href="#" class="footer-solial twitter">
+                        <img src="./images/footer-icons/twitter.svg" alt="twitter-icon">
+                    </a>
+                    <a href="#" class="footer-solial linkedin">
+                        <img src="./images/footer-icons/linkedin.svg" alt="linkedin-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                <p class="footer-text text--md">Copyright 2023 bitway. All Rights Reserved</p>
+                <div class="footer-copy__links">
+                    <a class="footer-copy__link text--md footer-text" href="./terms-page.html">Terms & Conditions</a>
+                    <a class="footer-copy__link text--md footer-text" href="./privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- ===Scripting In=== -->
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

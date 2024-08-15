@@ -10,6 +10,27 @@ body {
 	margin-right: auto;
 }
 
+.section-banner {
+    background-image: url('../images/about-bg-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding-top: 227px;
+    padding-bottom: 233px;
+	background-repeat: no-repeat;
+    text-align: center;
+	@media (max-width: 1200px) {
+		background-size: cover; 
+        background-position: center top; 
+        padding-top: 180px; 
+        padding-bottom: 180px; 
+	}
+	@media (max-width: 768px) {
+        padding-top: 150px; 
+        padding-bottom: 150px; 
+	}
+}
+
+
 // responsive
 @media (max-width: 1366px) {
 

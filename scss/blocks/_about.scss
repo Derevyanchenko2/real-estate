@@ -1,18 +1,13 @@
 /* About Us Banner Styles */
 .about-us-banner {
     background-image: url('../images/about-bg-image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-top: 227px;
-    padding-bottom: 233px;
-    text-align: center;
 }
 
 .breadcrumb {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

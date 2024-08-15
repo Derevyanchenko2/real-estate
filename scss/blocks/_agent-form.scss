@@ -1,9 +1,14 @@
 .form-item {
-    max-width: 457px;
     padding: 20px;
     box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
     background: #fff;
     border-radius: 16px;
+}
+.agent-form__item{
+    max-width: 457px;
+    @media(max-width: 460px){
+        width: 340px;
+    }
 }
 .form-title {
     margin-bottom: 30px;

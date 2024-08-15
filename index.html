@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Real Estate</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!--==== Google Fonts ===-->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <!--===Main CSS====-->
+    <!-- jQuery UI CSS -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-    <body>
-        <div class="mobileMenu-overlay">
+<body>
+    <div class="mobileMenu-overlay">
     <div class="mobileMenu">
         <button class="mobileMenu-close">&times;</button>
         <div class="mobileMenu-container">
@@ -56,7 +57,7 @@
                     <a class="header-menu__link text--md" href="./about-page.html" class=>About Us</a>
                 </li>
                 <li class="header-menu__item">
-                    <a class="header-menu__link text--md" href="#" class=>Properties</a>
+                    <a class="header-menu__link text--md" href="./property-page.html" class=>Properties</a>
                 </li>
                 <li class="header-menu__item">
                     <a class="header-menu__link text--md" href="./agents-page.html" class=>Agents</a>
@@ -66,7 +67,7 @@
                 </li>
             </ul>
             <div class="header-link">
-                <a class="btn btn--xs header-btn--pc" href="#">Contact Us</a>
+                <a class="btn btn--xs header-btn--pc" href="./contact-page.html">Contact Us</a>
             </div>
             <div class="burger open-menu-js">
                 <div class="open-menu">
@@ -78,7 +79,7 @@
         </div>
     </div>
 </header>
-        <main class="main">
+    <main class="main">
     <div class="container">
         <div class="main-top">
             <div class="main-title">
@@ -164,8 +165,8 @@
         </div>
     </div>
 </main>
- 
-        <section class="benefits">
+
+    <section class="benefits">
     <div class="container">
         <h2 class="title-2 benefits-title mb-10">Why should good house for you?</h2>
         <p class="text--md benefits-text">
@@ -209,14 +210,19 @@
     </div>
 </section>
 
-        <section class="properties">
+    <section class="properties">
     <div class="container">
         <h2 class="title-2">Explore the latest properties <br> available</h2>
         <div class="properties-wrapper">
             <div class="properties-row row">
-                <div class="properties-column col-4">
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/1.png" alt="column image 1">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/1.png" alt="column image 1">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -254,10 +260,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="properties-column col-4">
+                </a>
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/2.png" alt="column image 2">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/2.png" alt="column image 2">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -295,10 +306,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="properties-column col-4">
+                </a>
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/3.png" alt="column image 3">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/3.png" alt="column image 3">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -336,10 +352,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="properties-column col-4">
+                </a>
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/4.png" alt="column image 4">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/4.png" alt="column image 4">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -377,10 +398,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="properties-column col-4">
+                </a>
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/5.png" alt="column image 5">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/5.png" alt="column image 5">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -418,10 +444,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="properties-column col-4">
+                </a>
+                <a href="#" class="properties-column col-4">
                     <div class="properties-item">
-                        <img class="properties-item__img" src="./images/properties-images/hotel-images/6.png" alt="column image 6">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/6.png" alt="column image 6">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
                         <h4 class="properties-item__title title-4">
                             Luxury Apartment in California
                         </h4>
@@ -459,12 +490,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-</section> 
-        <section class="featured">
+</section>
+    <section class="featured">
     <img class="featured-decor__left" src="./images/featured-images/decor-left.png" alt="Rhombus decor left">
     <div class="container">
         <div class="featured-heading">
@@ -509,9 +540,9 @@
         </div>
     </div>
 </section>
- 
-        
-        <section class="testimonials">
+
+    
+    <section class="testimonials">
     <div class="container">
         <h2 class="title-2 testimonials-title">Testimonials</h2>
         <div class="testimonials-wrapper mt-50">
@@ -741,8 +772,8 @@
             </div>
         </div>
     </div>
-</section> 
-        <footer class="footer">
+</section>
+    <footer class="footer">
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-logo">
@@ -812,15 +843,21 @@
             <div class="footer-copy">
                 <p class="footer-text text--md">Copyright 2023 bitway. All Rights Reserved</p>
                 <div class="footer-copy__links">
-                    <a class="footer-copy__link text--md footer-text" href="#">Terms & Conditions</a>
-                    <a class="footer-copy__link text--md footer-text" href="#">Privacy Policy</a>
+                    <a class="footer-copy__link text--md footer-text" href="./terms-page.html">Terms & Conditions</a>
+                    <a class="footer-copy__link text--md footer-text" href="./privacy-policy.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-        <!-- ===Scripting In=== -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
 </html>

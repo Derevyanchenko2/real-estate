@@ -2,12 +2,9 @@
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
-}
-
-.container {
-    width: 90%;
-    max-width: 1140px;
-    margin: 0 auto;
+    @media(max-width: 768px){
+        padding: 0;
+    }
 }
 
 .video-wrapper {

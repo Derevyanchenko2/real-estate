@@ -1,0 +1,426 @@
+<section class="catalog">
+    <div class="container">
+        <nav class="property-breadcrumb breadcrumb">
+            <a class="breadcrumb-link" href="./index.html">Home</a>
+            <span>›</span>
+            <a class="breadcrumb-link" href="#">Properties</a>
+        </nav>
+        <div class="catalog-wrapper">
+            <!-- filter -->
+            <aside class="catalog-filter">
+                <div class="filter-wrapper">
+                    <div class="filter-item open" id="location-filter">
+                        <div class="filter-title">
+                            <h6 class="title-6">Select Location</h6>    
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="Btn-text">California</span>
+                                <i class="bx bx-chevron-dropdown"></i>
+                            </div>
+
+                            <ul class="options">
+                                <li class="option">
+                                    <span class="option-text text--md">Miami</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text text--md">California</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text text--md">New York</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-item open" id="property-type-filter">
+                        <div class="filter-title">
+                            <h6 class="title-6">Property Type</h6> 
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="filter-content">
+                            <label class="filter-content__label">
+                                <input type="checkbox" class="custom-checkbox" name="property-type" value="buy">
+                                <span class="custom-checkbox-box"></span>
+                                Buy
+                            </label>
+                            <label class="filter-content__label">
+                                <input type="checkbox" class="custom-checkbox" name="property-type" value="rent">
+                                <span class="custom-checkbox-box"></span>
+                                Rent
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item open" id="categories-filter-1">
+                        <div class="filter-title">
+                            <h6 class="title-6">Categories</h6> 
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="filter-content">
+                            <label class="filter-content__label text--md">
+                                <input type="checkbox" class="custom-checkbox" name="category" value="apartment">
+                                <span class="custom-checkbox-box"></span>
+                                Apartment
+                            </label>
+                            <label class="filter-content__label text--md">
+                                <input type="checkbox" class="custom-checkbox" name="category" value="villa">
+                                <span class="custom-checkbox-box"></span>
+                                Villa
+                            </label>
+                            <label class="filter-content__label text--md">
+                                <input type="checkbox" class="custom-checkbox" name="category" value="duplex">
+                                <span class="custom-checkbox-box"></span>
+                                Duplex
+                            </label>
+                            <label class="filter-content__label text--md">
+                                <input type="checkbox" class="custom-checkbox" name="category" value="houses">
+                                <span class="custom-checkbox-box"></span>
+                                Houses
+                            </label>
+                            <label class="filter-content__label text--md">
+                                <input type="checkbox" class="custom-checkbox" name="category" value="penthouse">
+                                <span class="custom-checkbox-box"></span>
+                                Penthouse
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item open" id="size-filter">
+                        <div class="filter-title">
+                            <h6 class="title-6">Property Size</h6>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="slider-container range-wrapper">
+                                <div class="slider-value range-value text--md" id="slider-value-1">Size: 600 - 1800 sqft</div>
+                                <div id="property-size-1" class="slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-item open" id="price-filter">
+                        <div class="filter-title">
+                            <h6 class="title-6">Price Range</h6>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="filter-content">
+                            <div class="slider-container range-wrapper">
+                                <div class="slider-value range-value text--md" id="slider-value-2">Price: $200 - $1000</div>
+                                <div id="property-size-2" class="slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </aside>
+            <!-- //filter -->
+            <div class="catalog-row row">
+                <!-- sorting -->
+                <div class="catalog-sorting">
+                    <div class="catalog-sorting__left">
+                        <div class="catalog-sorting__icons">
+                            <span class="catalog-sorting__icon active" id="two-columns">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4C2 2.89543 2.89543 2 4 2H8C9.10457 2 10 2.89543 10 4V8C10 9.10457 9.10457 10 8 10H4C2.89543 10 2 9.10457 2 8V4Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M14 4C14 2.89543 14.8954 2 16 2H20C21.1046 2 22 2.89543 22 4V8C22 9.10457 21.1046 10 20 10H16C14.8954 10 14 9.10457 14 8V4Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M2 16C2 14.8954 2.89543 14 4 14H8C9.10457 14 10 14.8954 10 16V20C10 21.1046 9.10457 22 8 22H4C2.89543 22 2 21.1046 2 20V16Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M14 16C14 14.8954 14.8954 14 16 14H20C21.1046 14 22 14.8954 22 16V20C22 21.1046 21.1046 22 20 22H16C14.8954 22 14 21.1046 14 20V16Z" stroke="#0F1015" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg>
+                                </span>
+                            <span class="catalog-sorting__icon" id="one-column">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 6H16M10 14H16M10 10H22M10 18H22M4 10C2.89543 10 2 9.10457 2 8C2 6.89543 2.89543 6 4 6C5.10457 6 6 6.89543 6 8C6 9.10457 5.10457 10 4 10ZM4 18C2.89543 18 2 17.1046 2 16C2 14.8954 2.89543 14 4 14C5.10457 14 6 14.8954 6 16C6 17.1046 5.10457 18 4 18Z" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="catalog-sorting__text text--md">Showing 1–16 of 72 results</p>
+                    </div>
+                    <div class="sorting-dropdown">
+                        <label class="sorting-dropdown__label text--md" for="sort-options">Sort by Price:</label>
+                        <select class="sorting-dropdown__select text--md" id="sort-options" class="sort-select">
+                            <option value="low-to-high">Low to High</option>
+                            <option value="high-to-low">High to Low</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- // sorting -->
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/1.png" alt="column image 1">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/2.png" alt="column image 2">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/3.png" alt="column image 3">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/4.png" alt="column image 4">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/5.png" alt="column image 5">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./single-hotel.html" class="properties-column col-6">
+                    <div class="properties-item">
+                        <div class="properties-item__img">
+                            <img class="hotel-image" src="./images/properties-images/hotel-images/6.png" alt="column image 6">
+                            <button class="properties-item__like-btn">
+                                <img src="./images/like-btn.svg" alt="like icon">
+                            </button>
+                        </div>
+                        <h4 class="properties-item__title title-4">
+                            Luxury Apartment in California
+                        </h4>
+                        <h5 class="properties-item__price">$250000</h5>
+                        <p class="properties-item__text">Using it can make you sound like you have been studying english for a long time.</p>
+                        <div class="section-info">
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/room.svg" alt="room icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/bathroom.svg" alt="bathroom icon">
+                                <span class="section-info__text text">2</span>
+                            </div>
+                            <div class="section-info__item">
+                                <img class="section-info__icon" src="./images/properties-images/column-icons/car.svg" alt="car icon">
+                                <span class="section-info__text text">1</span>
+                            </div>
+                        </div>
+                        <div class="properties-profile">
+                            <div class="properties-profile__info">
+                                <img src="./images/properties-images/column-icons/person-icon.svg" alt="person-icon">
+                                <span class="properties-profile__info-name text">Alexa Mate</span>
+                            </div>
+                            <div class="properties-profile__buttons">
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/add-friend.svg" alt="add friend icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/like.svg" alt="like icon">
+                                </button>
+                                <button class="properties-button">
+                                    <img src="./images/properties-images/column-icons/share.svg" alt="share icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+       
+            </div>
+        </div>
+    </div>
+</section>

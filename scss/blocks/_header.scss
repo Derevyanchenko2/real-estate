@@ -52,7 +52,7 @@
 	height: 100vh;
     z-index: 1001 ;
     overflow-y: auto;
-    background-color: $gray;
+    background-color: $white;
 	transition: all 0.3s;
 	position: relative;
 
@@ -64,7 +64,6 @@
         background: transparent;
         border: none;
         font-size: 40px;
-        // color: $black;
 		transition: all 0.3s;
 		&:hover {
 			opacity: 0.5;
@@ -80,6 +79,9 @@
         a{
             opacity: 1;
         }
+    }
+    &-link{
+        color: $blue;
     }
 	&-overlay {
 		// display: none;
